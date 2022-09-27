@@ -238,7 +238,10 @@ footer .p2 a{
 
     .line{
         display: flex;
-        border: 1px solid dodgerblue;
+        border: 1px solid #000e27;
+    }
+    .line.colorChg{
+        border: 1px solid #fff;
     }
 
     .logoFlex {
