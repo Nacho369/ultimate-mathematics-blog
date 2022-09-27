@@ -40,12 +40,12 @@ html{
 
 
 .header{
+    position: fixed;
     width: 100%;
     background: #ffffffd8;
     /* background: #03112c; */
     padding: 1em;
     color: #0043b8;
-    position: fixed;
     z-index: 9;
     transition: all .2s ease-in-out;
 }
@@ -83,7 +83,7 @@ html{
     transition: all .2s ease-in-out;
 }
 .navLinks i{
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 .navLinks a:nth-child(1):hover {
     color: #002f81
@@ -94,13 +94,16 @@ html{
 .navLinks a:nth-child(3):hover{
     color: #119600
 }
+.navLinks a.navChg{
+    color: white;
+}
 
 .home{
     background: url('./images/img_3_edited.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 85vh;
     position: relative;
     z-index: 1;
 }
@@ -109,7 +112,7 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    background: #00000077;
+    background: #000000a9;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -117,16 +120,16 @@ html{
 .colorSpan{
     color: dodgerblue;
 }
+.pushDown{
+    margin-top: 18em;
+}
 .home .homeDisp{
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    align-items: center;
+    height: 100%;
+    width: 100%;
     color: white;
 }
 .home .homeIntro{
     width: 100%;
-    margin-top: 5em;
     justify-self: center;
     text-align: center;
     background: #000e276b;
@@ -149,10 +152,79 @@ html{
 }
 
 
+
+.tableList {
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+.tableList h3{
+    padding: .5em;
+    margin: 1em 0;
+    background: #000e27;
+    color: white;
+    border-radius: 3px;
+    text-align: left;
+    align-self: flex-start;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.content-table thead tr{
+    background-color: #000e27;
+    text-align: left;
+    color: white
+}
+.content-table th,
+.content-table td{
+    padding: .8em 1em
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #ddd;
+    transition: all .2s ease-in-out
+}
+.content-table tbody tr:nth-of-type(even){
+    background: #d3d3d3;
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000e27;
+}
+.content-table tbody tr:hover{
+    font-weight: bold;
+    color: #000e27
+}
+
+
+footer{
+    background: #000e27;
+    min-height: 10vh;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+footer .p1{
+    padding: 1em 0 2em 0;
+}
+footer .p2{
+    padding: 1em 0 .5em 0;
+    font-size: 14px;
+}
+footer .p2 a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
 @media only screen and (max-width: 768px){
-    .header {
-        background: #ffffffa2;
-    }
 
     .header-flex {
         display: flex;
@@ -166,7 +238,7 @@ html{
 
     .line{
         display: flex;
-        border: 1px solid black;
+        border: 1px solid dodgerblue;
     }
 
     .logoFlex {
