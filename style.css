@@ -248,6 +248,22 @@ footer .p2 a{
     .navLinks {
         margin-top: 1em;
     }
+
+
+    .content-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        min-width: 400px;
+        width: 80%;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        font-size: 14px;
+    }
+        .content-table th,
+        .content-table td {
+            padding: 1em .5em;
+            text-align: center;
+        }
 }
 
 
