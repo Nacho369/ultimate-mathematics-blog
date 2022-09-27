@@ -253,10 +253,10 @@ footer .p2 a{
     .content-table {
         border-collapse: collapse;
         margin: 25px 0;
-        min-width: 400px;
-        width: 80%;
+        min-width: 200px;
+        width: 90%;
         border-radius: 5px 5px 0 0;
-        overflow: hidden;
+        overflow: scroll;
         font-size: 14px;
     }
         .content-table th,
