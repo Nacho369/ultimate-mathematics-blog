@@ -74,6 +74,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .navLinks a{
     text-decoration: none;
@@ -81,6 +82,7 @@ html{
     color: #031b47;
     margin-left: 2em;
     transition: all .2s ease-in-out;
+    overflow: hidden;
 }
 .navLinks i{
     font-size: 1.25em;
@@ -153,6 +155,8 @@ html{
 
 
 
+
+
 .tableList {
     width: 100%;
     justify-self: center;
@@ -201,6 +205,22 @@ html{
 .content-table tbody tr:hover{
     font-weight: bold;
     color: #000e27
+}
+
+
+.tableList button{
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: 3px;
+    background: dodgerblue;
+    border: none;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    transition: all .2s ease-in-out;
+    margin: 2em 0;
+}
+.tableList button:hover{
+    background: #031b47;
 }
 
 
