@@ -13,28 +13,38 @@ sans-serif;*/
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
-html{
+body{
     font-family: 'Ubuntu', sans-serif;
 }
-
 .container{
     max-width: 1024px;
     margin: auto;
     padding: 0 1.5em;
 }
-.heading {
-    font-size: 20px;
-    font-weight: bold;
-    color: #002447;
-    background: #1e8fff69;
-    padding: .3em;
-    width: fit-content;
-    border-radius: 3px;
-    margin-bottom: .3em;
+
+
+
+.quote{
+    min-height: 30vh;
+    display: grid;
+    color: white;
+    line-height: 2em;
+    background: url('./images/img_8.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
-.para {
-    font-size: 17px;
+.quote::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000a9;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 
@@ -45,7 +55,6 @@ html{
     background: #ffffffd8;
     /* background: #03112c; */
     padding: 1em;
-    color: #0043b8;
     z-index: 9;
     transition: all .2s ease-in-out;
 }
@@ -86,6 +95,7 @@ html{
 }
 .navLinks i{
     font-size: 1.25em;
+    overflow: hidden;
 }
 .navLinks a:nth-child(1):hover {
     color: #002f81
@@ -135,7 +145,7 @@ html{
     justify-self: center;
     text-align: center;
     background: #000e276b;
-    padding: 1em;
+    padding: 2em 1em;
     border-radius: 3px;
 }
 .home .homeIntro .btnHome{
@@ -163,7 +173,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     margin: 1em 0;
 }
 .tableList h3{
@@ -246,6 +256,10 @@ footer .p2 a{
 
 @media only screen and (max-width: 768px){
 
+    .quote h2{
+        font-size: 20px;
+    }
+
     .header-flex {
         display: flex;
         flex-direction: column;
@@ -273,6 +287,9 @@ footer .p2 a{
     }
 
 
+    .tableList {
+        align-items: center;
+    }
     .content-table {
         border-collapse: collapse;
         margin: 25px 0;
