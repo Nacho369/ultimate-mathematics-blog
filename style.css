@@ -46,7 +46,34 @@ body{
     width: 100%;
     z-index: -1;
 }
-
+.quote-color{
+    color: dodgerblue;
+}
+.quote-1{
+    min-height: 30vh;
+    display: grid;
+    color: white;
+    line-height: 2em;
+    background: url('./images/img_11.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.quote-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000a9;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.quote-1{
+    text-align: center;
+}
 
 
 .header{
@@ -167,7 +194,7 @@ body{
 
 
 
-.tableList {
+.sect-box {
     width: 100%;
     justify-self: center;
     display: flex;
@@ -176,7 +203,7 @@ body{
     align-items:flex-start;
     margin: 1em 0;
 }
-.tableList h3{
+.sect-box h3{
     padding: .5em;
     margin: 1em 0;
     background: #000e27;
@@ -218,7 +245,7 @@ body{
 }
 
 
-.tableList button{
+.sect-box button{
     cursor: pointer;
     padding: .5em 1em;
     border-radius: 3px;
@@ -229,7 +256,7 @@ body{
     transition: all .2s ease-in-out;
     margin: 2em 0;
 }
-.tableList button:hover{
+.sect-box button:hover{
     background: #031b47;
 }
 
